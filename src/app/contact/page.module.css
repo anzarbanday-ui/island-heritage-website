@@ -1,0 +1,174 @@
+.hero {
+  padding-top: var(--nav-h);
+  padding-block-end: clamp(var(--space-10), 4vw, var(--space-16));
+  background-color: var(--clr-cream);
+  border-bottom: 1px solid var(--clr-border);
+}
+
+.heroInner {
+  padding-top: clamp(var(--space-10), 4vw, var(--space-16));
+}
+
+.body {
+  padding-block: clamp(var(--space-16), 6vw, var(--space-24));
+}
+
+.grid {
+  display: grid;
+  gap: var(--space-12);
+  align-items: start;
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr 1.1fr;
+  }
+}
+
+/* Contact methods sidebar */
+.methods {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  margin-top: var(--space-8);
+}
+
+.method {
+  display: flex;
+  gap: var(--space-4);
+  align-items: center;
+  background-color: var(--clr-white);
+  border: 1.5px solid var(--clr-border);
+  border-radius: var(--radius-xl);
+  padding: var(--space-4) var(--space-5);
+  transition:
+    border-color var(--duration-fast) var(--ease-out),
+    transform var(--duration-fast) var(--ease-out);
+  text-decoration: none;
+}
+
+.method:hover {
+  border-color: var(--clr-accent);
+  transform: translateX(3px);
+}
+
+.methodIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: var(--radius-lg);
+  background-color: rgba(107, 143, 143, 0.10);
+  color: var(--clr-mist);
+  flex-shrink: 0;
+}
+
+.methodLabel {
+  font-size: var(--text-xs);
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--clr-gold);
+}
+
+.methodValue {
+  font-size: var(--text-sm);
+  color: var(--clr-deep);
+  margin-top: 2px;
+}
+
+/* Form panel */
+.formWrap {
+  background-color: var(--clr-white);
+  border-radius: var(--radius-2xl);
+  padding: clamp(var(--space-8), 4vw, var(--space-10));
+  box-shadow: var(--shadow-card);
+  border: 1px solid var(--clr-border);
+}
+
+.formTitle {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: 400;
+  color: var(--clr-deep);
+  margin-bottom: var(--space-6);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.fieldRow {
+  display: grid;
+  gap: var(--space-5);
+}
+
+@media (min-width: 640px) {
+  .fieldRow {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.fieldLabel {
+  font-size: var(--text-xs);
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--clr-text-muted);
+}
+
+.input,
+.textarea {
+  padding: 0.75rem var(--space-4);
+  border: 1.5px solid var(--clr-border);
+  border-radius: var(--radius-lg);
+  background-color: var(--clr-cream);
+  font-size: var(--text-sm);
+  color: var(--clr-deep);
+  outline: none;
+  transition: border-color var(--duration-fast) var(--ease-out), box-shadow var(--duration-fast) var(--ease-out);
+  width: 100%;
+  min-height: 3rem;
+}
+
+.input::placeholder,
+.textarea::placeholder {
+  color: var(--clr-text-muted);
+  opacity: 0.6;
+}
+
+.input:focus,
+.textarea:focus {
+  border-color: var(--clr-accent);
+  box-shadow: 0 0 0 3px rgba(184, 124, 74, 0.10);
+}
+
+.textarea {
+  min-height: 7rem;
+  resize: vertical;
+  line-height: 1.65;
+}
+
+.submitBtn {
+  margin-top: var(--space-2);
+  width: 100%;
+  justify-content: center;
+}
+
+/* Map */
+.mapWrap {
+  aspect-ratio: 16 / 9;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  margin-top: var(--space-6);
+}
