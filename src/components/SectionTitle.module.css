@@ -1,0 +1,42 @@
+.wrap {
+  max-width: 44rem;
+}
+
+.wrap--center {
+  text-align: center;
+  margin-inline: auto;
+}
+
+.wrap--wide {
+  max-width: 56rem;
+}
+
+.heading {
+  margin-top: var(--space-4);
+  font-family: var(--font-display);
+  font-weight: 300;
+  font-size: clamp(var(--text-3xl), 4vw, var(--text-5xl));
+  line-height: 1.08;
+  color: var(--clr-deep);
+  letter-spacing: -0.015em;
+}
+
+.heading--light {
+  color: var(--clr-white);
+}
+
+.text {
+  margin-top: var(--space-5);
+  font-size: var(--text-base);
+  line-height: 1.75;
+  color: var(--clr-text-muted);
+  max-width: 38rem;
+}
+
+.text--center {
+  margin-inline: auto;
+}
+
+.text--light {
+  color: rgba(255, 255, 255, 0.65);
+}
