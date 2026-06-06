@@ -1,0 +1,45 @@
+.hero {
+  padding-top: var(--nav-h);
+  padding-block-end: clamp(var(--space-12), 4vw, var(--space-20));
+  background-color: var(--clr-cream);
+  border-bottom: 1px solid var(--clr-border);
+}
+
+.heroInner {
+  padding-top: clamp(var(--space-10), 4vw, var(--space-16));
+}
+
+.body {
+  padding-block: clamp(var(--space-16), 5vw, var(--space-24));
+}
+
+.content {
+  max-width: 52rem;
+  background-color: var(--clr-white);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-2xl);
+  padding: clamp(var(--space-8), 4vw, var(--space-12));
+  box-shadow: var(--shadow-soft);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+}
+
+.block + .block {
+  padding-top: var(--space-8);
+  border-top: 1px solid var(--clr-border);
+}
+
+.blockTitle {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: 400;
+  color: var(--clr-deep);
+}
+
+.blockText {
+  margin-top: var(--space-3);
+  font-size: var(--text-base);
+  line-height: 1.75;
+  color: var(--clr-text-muted);
+}

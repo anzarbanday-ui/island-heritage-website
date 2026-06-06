@@ -1,0 +1,129 @@
+.hero {
+  padding-top: var(--nav-h);
+  padding-block-end: clamp(var(--space-12), 4vw, var(--space-20));
+  background-color: var(--clr-cream);
+  border-bottom: 1px solid var(--clr-border);
+}
+
+.heroInner {
+  padding-top: clamp(var(--space-10), 4vw, var(--space-16));
+}
+
+/* Map + attractions */
+.mapGrid {
+  display: grid;
+  gap: var(--space-10);
+  align-items: start;
+}
+
+@media (min-width: 1024px) {
+  .mapGrid {
+    grid-template-columns: 1.15fr 0.85fr;
+  }
+}
+
+.mapWrap {
+  aspect-ratio: 4 / 3;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+}
+
+.colHead {
+  font-size: var(--text-xs);
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--clr-gold);
+  margin-bottom: var(--space-5);
+}
+
+.attractions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.attractionItem {
+  background-color: var(--clr-white);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4) var(--space-5);
+  transition: border-color var(--duration-fast) var(--ease-out);
+}
+
+.attractionItem:hover {
+  border-color: var(--clr-gold);
+}
+
+.attractionTitle {
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--clr-deep);
+}
+
+.attractionDist {
+  color: var(--clr-gold);
+  font-weight: 400;
+}
+
+.attractionDesc {
+  font-size: var(--text-xs);
+  color: var(--clr-text-muted);
+  margin-top: 3px;
+  line-height: 1.5;
+}
+
+/* Travel info */
+.travelSection {
+  padding-block: clamp(var(--space-16), 6vw, var(--space-24));
+  background-color: var(--clr-cream);
+}
+
+.travelGrid {
+  margin-top: var(--space-10);
+  display: grid;
+  gap: var(--space-5);
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (min-width: 1024px) {
+  .travelGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.travelCard {
+  background-color: var(--clr-white);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-xl);
+  padding: var(--space-7);
+  box-shadow: var(--shadow-soft);
+  transition:
+    transform var(--duration-base) var(--ease-out),
+    box-shadow var(--duration-base) var(--ease-out);
+}
+
+.travelCard:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-card);
+}
+
+.travelIcon {
+  color: var(--clr-gold);
+  margin-bottom: var(--space-6);
+}
+
+.travelTitle {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  font-weight: 400;
+  color: var(--clr-deep);
+}
+
+.travelText {
+  margin-top: var(--space-3);
+  font-size: var(--text-sm);
+  line-height: 1.65;
+  color: var(--clr-text-muted);
+}

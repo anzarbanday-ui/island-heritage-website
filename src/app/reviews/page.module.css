@@ -1,0 +1,27 @@
+.hero {
+  padding-top: var(--nav-h);
+  padding-block-end: clamp(var(--space-12), 4vw, var(--space-20));
+  background-color: var(--clr-cream);
+  border-bottom: 1px solid var(--clr-border);
+}
+
+.heroInner {
+  padding-top: clamp(var(--space-10), 4vw, var(--space-16));
+}
+
+.grid {
+  display: grid;
+  gap: var(--space-6);
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
