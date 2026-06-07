@@ -14,13 +14,7 @@ const galleryImages = [
     caption: "Single Bed Room",
     width: 800, height: 533
   },
-  {
-    src: "/images/lounge.webp",
-    alt: "Heritage lounge interior with warm textures and local craft",
-    caption: "Heritage lounge",
-    width: 800, height: 600
-  },
-  {
+{
     src: "/images/room-double.webp",
     alt: "Double Bed Room at Island Heritage with two beds",
     caption: "Double Bed Room",
