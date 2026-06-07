@@ -39,12 +39,6 @@ const galleryImages = [
     width: 800, height: 1000
   },
   {
-    src: "/images/bathroom.webp",
-    alt: "Bathroom detail showing stone, brass, and linen at Island Heritage",
-    caption: "Bathroom detail",
-    width: 800, height: 533
-  },
-  {
     src: "/images/hero.webp",
     alt: "Island Heritage hotel facade at golden hour",
     caption: "Golden hour",
