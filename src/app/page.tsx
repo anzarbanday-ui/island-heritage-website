@@ -40,8 +40,8 @@ export default function HomePage() {
           </div>
           <div className={pageStyles.aboutImage}>
             <Image
-              src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=900&q=80"
-              alt="Heritage hotel lounge interior with warm textures and natural light"
+              src="/images/lounge.webp"
+              alt="Island Heritage lounge interior with warm textures and natural light"
               fill
               loading="lazy"
               sizes="(min-width: 1024px) 50vw, 100vw"
@@ -102,8 +102,8 @@ export default function HomePage() {
         <div className={`container ${pageStyles.experienceGrid}`}>
           <div className={pageStyles.experienceImage}>
             <Image
-              src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=900&q=80"
-              alt="Refined dining setup with warm candlelight ambience"
+              src="/images/dining.webp"
+              alt="Refined dining setup at Island Heritage with warm candlelight ambience"
               fill
               loading="lazy"
               sizes="(min-width: 1024px) 50vw, 100vw"

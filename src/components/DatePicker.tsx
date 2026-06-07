@@ -125,8 +125,8 @@ export function DatePicker({ label, value, onChange, minDate, name }: DatePicker
                     disabled ? styles["day--disabled"] : ""
                   ].filter(Boolean).join(" ")}
                   onClick={() => !disabled && selectDay(day)}
-                  aria-label={`${day} ${MONTHS[viewMonth]} ${viewYear}`}
-                  aria-selected={selected}
+                  aria-label={`${day} ${MONTHS[viewMonth]} ${viewYear}${selected ? ", selected" : ""}`}
+                  aria-pressed={selected}
                   aria-disabled={disabled}
                   tabIndex={disabled ? -1 : 0}
                 >

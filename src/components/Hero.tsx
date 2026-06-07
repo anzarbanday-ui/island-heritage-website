@@ -31,8 +31,8 @@ export function Hero() {
     <section className={styles.hero} aria-label="Hero">
       <div className={styles.imageWrap} ref={imageRef} aria-hidden="true">
         <Image
-          src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=2000&q=80"
-          alt="Panoramic mountain landscape of Kashmir near Srinagar"
+          src="/images/hero.webp"
+          alt="Island Heritage hotel exterior at golden hour, Peerzu Island, Srinagar"
           fill
           priority
           sizes="100vw"

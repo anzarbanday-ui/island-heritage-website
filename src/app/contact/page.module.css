@@ -64,6 +64,12 @@
   flex-shrink: 0;
 }
 
+.methodInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
 .methodLabel {
   font-size: var(--text-xs);
   font-weight: 500;
@@ -162,6 +168,62 @@
   margin-top: var(--space-2);
   width: 100%;
   justify-content: center;
+}
+
+.submitBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Success state */
+.successMsg {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-3);
+  padding: var(--space-8);
+  background-color: rgba(107, 143, 143, 0.07);
+  border: 1.5px solid rgba(107, 143, 143, 0.25);
+  border-radius: var(--radius-xl);
+}
+
+.successIcon {
+  color: var(--clr-mist);
+  flex-shrink: 0;
+}
+
+.successTitle {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: 400;
+  color: var(--clr-deep);
+}
+
+.successText {
+  font-size: var(--text-sm);
+  line-height: 1.75;
+  color: var(--clr-text-muted);
+  max-width: 32rem;
+}
+
+.resetBtn {
+  margin-top: var(--space-2);
+}
+
+/* Error banner */
+.errorMsg {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-4) var(--space-5);
+  background-color: rgba(184, 60, 60, 0.07);
+  border: 1.5px solid rgba(184, 60, 60, 0.22);
+  border-radius: var(--radius-lg);
+  font-size: var(--text-sm);
+  color: #8B2020;
+  margin-bottom: var(--space-2);
 }
 
 /* Map */

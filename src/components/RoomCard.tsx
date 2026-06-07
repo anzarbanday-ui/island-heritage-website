@@ -5,11 +5,11 @@ import type { Room } from "@/data/site";
 import styles from "./RoomCard.module.css";
 
 const roomImages: Record<string, string> = {
-  "Single Bed Room": "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=900&q=80",
-  "Double Bed Room":  "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=900&q=80"
+  "Single Bed Room": "/images/room-single.webp",
+  "Double Bed Room": "/images/room-double.webp"
 };
 
-const fallbackImage = "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=900&q=80";
+const fallbackImage = "/images/room-single.webp";
 
 type RoomCardProps = {
   room: Room;

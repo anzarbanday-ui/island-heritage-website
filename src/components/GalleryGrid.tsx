@@ -3,51 +3,51 @@ import styles from "./GalleryGrid.module.css";
 
 const galleryImages = [
   {
-    src: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=800&q=80",
-    alt: "Dal Lake panorama at golden hour, Srinagar",
-    caption: "Dal Lake at dusk",
+    src: "/images/exterior.webp",
+    alt: "Island Heritage garden and outdoor grounds, Peerzu Island",
+    caption: "The garden",
     width: 800, height: 1067
   },
   {
-    src: "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=800&q=80",
-    alt: "Luxury hotel room interior with warm lighting",
+    src: "/images/room-single.webp",
+    alt: "Single Bed Room at Island Heritage with natural light",
     caption: "Single Bed Room",
     width: 800, height: 533
   },
   {
-    src: "https://images.unsplash.com/photo-1587474260584-136574528ed5?auto=format&fit=crop&w=800&q=80",
-    alt: "Sunrise over the mountains of Kashmir",
-    caption: "Morning views from the property",
+    src: "/images/lounge.webp",
+    alt: "Heritage lounge interior with warm textures and local craft",
+    caption: "Heritage lounge",
     width: 800, height: 600
   },
   {
-    src: "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=800&q=80",
-    alt: "Spacious double room with natural light",
+    src: "/images/room-double.webp",
+    alt: "Double Bed Room at Island Heritage with two beds",
     caption: "Double Bed Room",
     width: 800, height: 1067
   },
   {
-    src: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80",
-    alt: "Elegant dining table with Kashmiri inspired setting",
+    src: "/images/dining.webp",
+    alt: "Refined dining setup at Island Heritage restaurant",
     caption: "In-house dining",
     width: 800, height: 533
   },
   {
-    src: "https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=800&q=80",
-    alt: "Heritage hotel exterior at night with warm lights",
-    caption: "The property at night",
+    src: "/images/terrace.webp",
+    alt: "Evening terrace at Island Heritage with warm ambient lighting",
+    caption: "Terrace at dusk",
     width: 800, height: 1000
   },
   {
-    src: "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=800&q=80",
-    alt: "Hotel pool terrace with mountain backdrop",
-    caption: "Terrace & outdoor spaces",
+    src: "/images/bathroom.webp",
+    alt: "Bathroom detail showing stone, brass, and linen at Island Heritage",
+    caption: "Bathroom detail",
     width: 800, height: 533
   },
   {
-    src: "https://images.unsplash.com/photo-1445019980597-93fa8acb246c?auto=format&fit=crop&w=800&q=80",
-    alt: "Morning tea tray by the window with garden view",
-    caption: "Morning ritual",
+    src: "/images/hero.webp",
+    alt: "Island Heritage hotel facade at golden hour",
+    caption: "Golden hour",
     width: 800, height: 600
   }
 ];

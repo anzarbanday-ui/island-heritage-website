@@ -122,7 +122,7 @@ export const rooms: Room[] = [
     description: "A serene private room with one comfortable double bed, designed for couples or two guests seeking a quiet, restful stay.",
     size: "Approx. 28 sqm",
     occupancy: "2 adults",
-    amenities: ["One double bed", "Smart TV", "Hot water", "Work desk"],
+    amenities: ["One double bed", "TV", "Hot water", "Work desk"],
     rateLabel: "Request availability",
     plan: { ...photoPlans.room, label: "Capture: one-bed room with natural lighting and uncluttered styling" }
   },
@@ -131,7 +131,7 @@ export const rooms: Room[] = [
     description: "A spacious room with two double beds, ideal for families or small groups who want comfort, storage, and room to settle in.",
     size: "Approx. 38 sqm",
     occupancy: "4 guests",
-    amenities: ["Two double beds", "Smart TV", "Hot water", "Extra storage"],
+    amenities: ["Two double beds", "TV", "Hot water", "Extra storage"],
     rateLabel: "Plan family stay",
     plan: { ...photoPlans.room, label: "Capture: two-bed room with both beds visible in a wide-angle frame" }
   }
@@ -145,11 +145,11 @@ export type Amenity = {
 
 export const amenities: Amenity[] = [
   { title: "WiFi", description: "High-speed connectivity throughout guest areas.", icon: Wifi },
-  { title: "Parking", description: "Secure on-site parking with arrival support.", icon: Car },
+  { title: "Parking", description: "On-site parking subject to availability.", icon: Car },
   { title: "Room Service", description: "Thoughtful in-room dining and beverage service.", icon: ConciergeBell },
   { title: "Hot Water", description: "Reliable hot water for every season.", icon: Droplets },
-  { title: "Smart TV", description: "Streaming-ready screens in every room.", icon: Tv },
-  { title: "Restaurant", description: "Seasonal menus with local produce and refined plating.", icon: Utensils },
+  { title: "TV", description: "Television in every room.", icon: Tv },
+  { title: "Food Service", description: "Home-style meals and beverages available on request.", icon: Utensils },
   { title: "Laundry", description: "Prompt laundry support for extended stays.", icon: Shirt },
   { title: "Airport Pickup", description: "Pre-arranged transfers from airport or rail station.", icon: Plane },
   { title: "Scenic View", description: "Rooms and lounges oriented toward natural vistas.", icon: Mountain },
@@ -196,10 +196,10 @@ export const testimonials = [
 ];
 
 export const attractions = [
-  { title: "Heritage Market", distance: "8 min", description: "Local craft, tea, and slow evening walks." },
-  { title: "Mountain View Point", distance: "18 min", description: "Sunrise views and gentle walking trails." },
-  { title: "Old Valley Temple", distance: "14 min", description: "Quiet architecture and cultural context." },
-  { title: "Botanical Walk", distance: "22 min", description: "Seasonal blooms and shaded paths." }
+  { title: "Polo View Market", distance: "5 min", description: "Handicrafts, Kashmiri shawls, and local shopping." },
+  { title: "Lal Chowk", distance: "10 min", description: "Srinagar's historic centre for markets, food, and city life." },
+  { title: "Dal Lake", distance: "15 min", description: "Iconic shikara rides and floating gardens." },
+  { title: "Shankarachariya Mountain", distance: "20 min", description: "Ancient hilltop temple with panoramic views over Srinagar." }
 ];
 
 export const contactMethods = [

@@ -7,7 +7,7 @@ import styles from "./page.module.css";
 
 export const metadata: Metadata = {
   title: "Amenities",
-  description: "Premium amenities at Island Heritage — WiFi, parking, room service, restaurant, laundry, airport pickup, scenic views, and more."
+  description: "Amenities at Island Heritage — WiFi, parking, room service, food on request, laundry, airport pickup, scenic views, and more."
 };
 
 export default function AmenitiesPage() {

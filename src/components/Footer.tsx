@@ -1,6 +1,7 @@
 import Link from "next/link";
-import { Instagram, Linkedin, Mail, MapPin, Phone } from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
 import { navItems, site } from "@/data/site";
+import { NewsletterForm } from "./NewsletterForm";
 import styles from "./Footer.module.css";
 
 export function Footer() {
@@ -18,20 +19,6 @@ export function Footer() {
           </div>
           <p className={styles.tagline}>{site.tagline}</p>
 
-          <div style={{ marginTop: "var(--space-8)" }}>
-            <p className={styles.colHeading}>Follow</p>
-            <div className={styles.socialRow}>
-              <a href="#" className={styles.socialBtn} aria-label="Instagram">
-                <Instagram size={18} aria-hidden="true" />
-              </a>
-              <a href="#" className={styles.socialBtn} aria-label="LinkedIn">
-                <Linkedin size={18} aria-hidden="true" />
-              </a>
-              <a href={`mailto:${site.email}`} className={styles.socialBtn} aria-label="Email">
-                <Mail size={18} aria-hidden="true" />
-              </a>
-            </div>
-          </div>
         </div>
 
         {/* Explore */}
@@ -71,21 +58,7 @@ export function Footer() {
           <p className={styles.newsletterText}>
             Seasonal offers, new experiences, and quiet updates from the property.
           </p>
-          <form className={styles.newsletterForm} onSubmit={(e) => e.preventDefault()} aria-label="Newsletter signup">
-            <label htmlFor="footer-email" className="sr-only">Your email address</label>
-            <input
-              id="footer-email"
-              type="email"
-              name="email"
-              placeholder="your@email.com"
-              className={styles.newsletterInput}
-              autoComplete="email"
-              required
-            />
-            <button type="submit" className={styles.newsletterBtn}>
-              Subscribe
-            </button>
-          </form>
+          <NewsletterForm />
         </div>
 
       </div>

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 };
 
 const travelInfo = [
-  { icon: Car, title: "By car", text: "Private parking and porch drop-off are available on arrival." },
+  { icon: Car, title: "By car", text: "On-site parking is available subject to availability." },
   { icon: Plane, title: "Airport", text: "Pre-booked airport pickup can be arranged through reservations." },
   { icon: Train, title: "Rail station", text: "Rail station transfers available with 24-hour advance notice." },
   { icon: MapPinned, title: "Accessibility", text: "Step-free arrival support and luggage assistance are available on request." }

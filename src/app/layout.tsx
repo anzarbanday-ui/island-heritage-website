@@ -79,7 +79,7 @@ const schemaOrg = {
     { "@type": "LocationFeatureSpecification", "name": "WiFi", "value": true },
     { "@type": "LocationFeatureSpecification", "name": "Parking", "value": true },
     { "@type": "LocationFeatureSpecification", "name": "Room Service", "value": true },
-    { "@type": "LocationFeatureSpecification", "name": "Restaurant", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Food Service", "value": true },
     { "@type": "LocationFeatureSpecification", "name": "Airport Transfer", "value": true }
   ],
   "priceRange": "₹₹₹",

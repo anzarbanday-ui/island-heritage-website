@@ -37,8 +37,8 @@ export default function AboutPage() {
             />
             <div className={styles.heroImage}>
               <Image
-                src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=900&q=80"
-                alt="Serene heritage hotel lounge interior"
+                src="/images/lounge.webp"
+                alt="Island Heritage lounge interior with heritage materials and natural light"
                 fill
                 priority
                 sizes="(min-width: 1024px) 50vw, 100vw"
@@ -67,8 +67,8 @@ export default function AboutPage() {
           <div className={`container ${styles.storyGrid}`}>
             <div className={styles.storyImage}>
               <Image
-                src="https://images.unsplash.com/photo-1587474260584-136574528ed5?auto=format&fit=crop&w=900&q=80"
-                alt="Himalayan mountain vista from Srinagar"
+                src="/images/exterior.webp"
+                alt="Island Heritage property exterior and surroundings, Peerzu Island"
                 fill
                 loading="lazy"
                 sizes="(min-width: 1024px) 50vw, 100vw"

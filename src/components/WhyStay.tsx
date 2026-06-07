@@ -5,8 +5,8 @@ import styles from "./WhyStay.module.css";
 const stats = [
   {
     icon: Mountain,
-    number: "Dal Lake",
-    label: "Dal Lake & Himalayan views from every room"
+    number: "Jhelum",
+    label: "Jhelum River and mountain views from the property"
   },
   {
     icon: Star,
